@@ -4,24 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="conteudo-artigo">
         <h1></h1>
         <p></p>
 
-        <h2>1</h2>
-        <p></p>
+        <h2>Protocolos de comunicação em rede</h2>
+        <p>Protocolos de comunicação em rede são conjuntos de regras e convenções que definem como dados são transmitidos e recebidos entre dispositivos em uma rede. Eles garantem a interoperabilidade e a integridade da comunicação. Aqui estão alguns dos principais protocolos:
 
-        <h2>2</h2>
-        <p></p>
+            TCP/IP (Transmission Control Protocol/Internet Protocol): Base da comunicação na Internet e redes locais, garantindo a entrega confiável de dados (TCP) e o roteamento eficiente (IP).
+            
+            HTTP (Hypertext Transfer Protocol): Usado para a transferência de páginas web e recursos da Internet. HTTPS é a versão segura que utiliza criptografia SSL/TLS.
+            
+            FTP (File Transfer Protocol): Protocolo para a transferência de arquivos entre sistemas na rede, permitindo upload e download.
+            
+            SMTP (Simple Mail Transfer Protocol): Protocolo para envio de e-mails entre servidores de e-mail.
+            
+            DNS (Domain Name System): Traduz nomes de domínio legíveis por humanos (como www.example.com) em endereços IP que computadores usam para se comunicar.
+            
+            UDP (User Datagram Protocol): Protocolo para comunicação rápida e sem garantia de entrega, usado para aplicações que priorizam a velocidade sobre a confiabilidade, como streaming de vídeo.
+            
+            Cada protocolo tem um papel específico e é projetado para atender a diferentes necessidades de comunicação na rede, desde a transmissão de dados e a navegação na web até o envio de e-mails e o gerenciamento de arquivos.
+            
+            
+            
+            
+            </p>
 
-        <h2>3</h2>
-        <p></p>
+        <h2>Http</h2>
+        <p>O HTTP (Hypertext Transfer Protocol) é o protocolo fundamental para a comunicação na web. Ele define como mensagens são formatadas e transmitidas entre clientes (como navegadores) e servidores web.
 
-        <h2>4</h2>
-        <p></p>
+            Função: Facilita a troca de informações, como páginas web, imagens e outros recursos, entre um cliente e um servidor.
+            
+            Funcionamento: O cliente faz uma solicitação HTTP (request) ao servidor, que responde com os dados solicitados (response). Cada solicitação e resposta inclui cabeçalhos que fornecem informações sobre o conteúdo e o status da comunicação.
+            
+            HTTPS: A versão segura do HTTP, que utiliza criptografia SSL/TLS para proteger a comunicação contra interceptação e adulteração.
+            
+            HTTP é essencial para a navegação na web e a interação com sites e aplicativos online, permitindo que informações sejam transmitidas de maneira padronizada e eficiente.
+            
+            
+            
+            
+            </p>
+
+        <h2> Ftp</h2>
+        <p>O FTP (File Transfer Protocol) é um protocolo de comunicação usado para transferir arquivos entre sistemas em uma rede, como entre um cliente e um servidor.
+
+            Função: Permite o upload e o download de arquivos, bem como a gestão de diretórios e arquivos no servidor.
+            
+            Funcionamento: Opera com um modelo cliente-servidor, onde o cliente envia comandos e o servidor responde. O FTP pode funcionar em dois modos: ativo e passivo, dependendo de como as conexões são estabelecidas.
+            
+            Segurança: O FTP padrão não oferece criptografia, o que pode expor dados a riscos de interceptação. Para conexões seguras, são usados protocolos como FTPS (FTP Secure) ou SFTP (SSH File Transfer Protocol), que fornecem criptografia para proteger os dados durante a transferência.
+            
+            FTP é amplamente utilizado para transferir grandes volumes de dados e gerenciar arquivos em servidores remotos, mas, devido a suas limitações de segurança, muitas organizações optam por soluções mais seguras para proteger informações sensíveis.
+            
+            
+            
+            
+            </p>
+
+        <h2>SMTP</h2>
+        <p>O SMTP (Simple Mail Transfer Protocol) é o protocolo padrão para o envio de e-mails na Internet.
+
+            Função: Facilita a transferência de e-mails entre servidores de correio eletrônico e é responsável pelo envio de mensagens dos clientes de e-mail para os servidores.
+            
+            Funcionamento: O cliente de e-mail se conecta ao servidor SMTP para enviar a mensagem, que é então roteada e entregue ao servidor de e-mail do destinatário. O SMTP trabalha em conjunto com protocolos como POP3 ou IMAP, que são usados para a recepção e o gerenciamento dos e-mails no lado do cliente.
+            
+            Segurança: O SMTP por padrão não oferece criptografia, mas pode ser complementado com autenticação e criptografia TLS (Transport Layer Security) para proteger a comunicação e garantir que as mensagens sejam enviadas de forma segura.
+            
+            SMTP é essencial para a comunicação por e-mail, garantindo que as mensagens sejam entregues corretamente entre remetentes e destinatários na rede.
+            
+            
+            
+            
+            </p>
     </div>
     <a href="../html.html"></a>
 </body>

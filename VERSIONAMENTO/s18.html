@@ -4,24 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <div class="conteudo-artigo">
         <h1></h1>
         <p></p>
 
-        <h2>1</h2>
-        <p></p>
+        <h2> Criptografia</h2>
+        <p>A criptografia é a prática de proteger informações através da transformação de dados em um formato codificado, que só pode ser acessado ou revertido ao formato original por pessoas autorizadas. Isso é feito usando algoritmos e chaves criptográficas para garantir a confidencialidade e a integridade dos dados.
 
-        <h2>2</h2>
-        <p></p>
+            Criptografia Simétrica: Usa a mesma chave para criptografar e descriptografar os dados. Exemplo: AES (Advanced Encryption Standard).
+            
+            Criptografia Assimétrica: Utiliza um par de chaves — uma pública e uma privada. Dados criptografados com a chave pública só podem ser descriptografados com a chave privada correspondente, e vice-versa. Exemplo: RSA (Rivest-Shamir-Adleman).
+            
+            A criptografia é essencial para proteger dados em trânsito e armazenados, garantindo a privacidade e segurança das informações contra acessos não autorizados.
+            
+            
+            
+            
+            </p>
 
-        <h2>3</h2>
-        <p></p>
+        <h2> O protocolo TCP/IP</h2>
+        <p>O protocolo TCP/IP (Transmission Control Protocol/Internet Protocol) é a base da comunicação na Internet e em redes privadas. Ele define como dados são transmitidos e roteados entre dispositivos na rede.
 
-        <h2>4</h2>
-        <p></p>
+            TCP (Transmission Control Protocol): Garante a entrega confiável dos dados, dividindo as informações em pacotes e verificando se todos os pacotes foram recebidos corretamente e na ordem certa. Se houver erros ou pacotes perdidos, o TCP os retransmite.
+            
+            IP (Internet Protocol): Cuida do endereçamento e roteamento dos pacotes de dados para garantir que eles cheguem ao destino correto. O IP atribui endereços únicos aos dispositivos na rede e decide o melhor caminho para os pacotes.
+            
+            Juntos, TCP e IP permitem a comunicação eficiente e confiável entre dispositivos na rede, suportando a vasta gama de aplicações e serviços da Internet.
+            
+            
+            
+            
+            </p>
+
+        <h2>Message Queuing (Filas de Mensagens)</h2>
+        <p>Message Queuing (Filas de Mensagens) é um método para comunicação assíncrona entre sistemas ou componentes de software, permitindo que mensagens sejam enviadas e recebidas de forma segura e eficiente.
+
+            Filas de Mensagens: Funcionam como intermediárias onde mensagens são armazenadas temporariamente até que o destinatário esteja pronto para processá-las. Isso desacopla o remetente do destinatário, permitindo que eles operem de forma independente.
+            
+            Benefícios: Incluem maior escalabilidade, pois as mensagens podem ser processadas em diferentes velocidades; maior resiliência, já que mensagens não são perdidas se o destinatário estiver temporariamente fora de serviço; e melhor gerenciamento de carga, ao equilibrar a demanda entre produtores e consumidores de mensagens.
+            
+            Exemplos de Ferramentas: RabbitMQ, Apache Kafka e Microsoft Azure Service Bus.
+            
+            Filas de mensagens são amplamente usadas em sistemas distribuídos e arquiteturas baseadas em microserviços para facilitar a comunicação entre diferentes partes de um sistema sem a necessidade de interação direta e síncrona.</p>
+
+        <h2> RabbitMQ e Apache Kafka</h2>
+        <p>RabbitMQ e Apache Kafka são duas soluções populares para gerenciamento de mensagens e comunicação assíncrona, cada uma com suas características e casos de uso específicos.
+
+            RabbitMQ:
+            
+            Tipo: Broker de mensagens baseado em filas.
+            Características: Utiliza o protocolo AMQP (Advanced Message Queuing Protocol) e é projetado para garantir a entrega confiável e ordenada de mensagens. Oferece suporte a padrões de roteamento flexíveis e permite que as mensagens sejam processadas por múltiplos consumidores.
+            Casos de Uso: Ideal para cenários de processamento de mensagens que requerem alta confiabilidade e garantias de entrega, como tarefas em background e integração de sistemas.
+            Apache Kafka:
+            
+            Tipo: Plataforma de streaming de eventos e mensagens distribuídas.
+            Características: Foca na alta capacidade de processamento de grandes volumes de dados em tempo real. Utiliza um modelo de publicação e assinatura (publish-subscribe) e armazena dados em tópicos que são replicados para garantir alta disponibilidade e durabilidade.
+            Casos de Uso: Adequado para aplicações que precisam processar fluxos de dados em tempo real e realizar análises, como monitoramento de logs e integração de dados em grande escala.
+            Enquanto RabbitMQ é mais focado em filas de mensagens e garantias de entrega, Kafka é mais voltado para o processamento de eventos e dados em alta escala e em tempo real.
+            
+            
+            
+            
+            </p>
     </div>
     <a href="../html.html"></a>
 </body>

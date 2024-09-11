@@ -11,17 +11,159 @@
         <h1></h1>
         <p></p>
 
-        <h2>1</h2>
-        <p></p>
+        <h2>1. Binary Cross-Entropy Loss: 
+        </h2>
+        <p>Binary Cross-Entropy Loss (ou perda de entropia cruzada binária) é uma função de perda usada em problemas de classificação binária, onde o objetivo é prever uma das duas classes possíveis.
 
-        <h2>2</h2>
-        <p></p>
+            Função: Mede a diferença entre as previsões do modelo e os valores reais das classes. Quanto menor o valor da perda, mais precisas são as previsões do modelo.
+            
+            Cálculo: A perda é calculada usando a fórmula:
+            
+            Loss
+            =
+            −
+            1
+            𝑁
+            ∑
+            𝑖
+            =
+            1
+            𝑁
+            [
+            𝑦
+            𝑖
+            log
+            ⁡
+            (
+            𝑝
+            𝑖
+            )
+            +
+            (
+            1
+            −
+            𝑦
+            𝑖
+            )
+            log
+            ⁡
+            (
+            1
+            −
+            𝑝
+            𝑖
+            )
+            ]
+            Loss=− 
+            N
+            1
+            ​
+              
+            i=1
+            ∑
+            N
+            ​
+             [y 
+            i
+            ​
+             log(p 
+            i
+            ​
+             )+(1−y 
+            i
+            ​
+             )log(1−p 
+            i
+            ​
+             )]
+            onde 
+            𝑦
+            𝑖
+            y 
+            i
+            ​
+              é o rótulo real (0 ou 1), 
+            𝑝
+            𝑖
+            p 
+            i
+            ​
+              é a probabilidade prevista pelo modelo, e 
+            𝑁
+            N é o número total de amostras.
+            
+            Uso: É amplamente utilizada em modelos de redes neurais e outros algoritmos de aprendizado de máquina para ajustar os parâmetros do modelo e melhorar a precisão das previsões em tarefas de classificação binária.
+            
+            A Binary Cross-Entropy Loss é crucial para ajustar modelos para que eles possam distinguir com precisão entre duas classes distintas.
+            
+            
+            
+            
+            </p>
 
-        <h2>3</h2>
-        <p></p>
+        <h2>Parâmetros e hiperparâmetros </h2>
+        <p>Parâmetros e hiperparâmetros são dois conceitos fundamentais em aprendizado de máquina e redes neurais, ambos essenciais para o ajuste e o desempenho dos modelos.
 
-        <h2>4</h2>
-        <p></p>
+        Parâmetros:
+        
+        Definição: São valores ajustáveis internos do modelo que são aprendidos diretamente a partir dos dados durante o treinamento.
+        Exemplos: Pesos e vieses em uma rede neural, coeficientes em um modelo de regressão.
+        Função: Determinam como os dados de entrada são transformados em previsões. O objetivo do treinamento é encontrar os valores ótimos para esses parâmetros.
+        Hiperparâmetros:
+        
+        Definição: São valores definidos antes do treinamento e não são ajustados diretamente pelos algoritmos de aprendizado. Eles controlam o processo de treinamento e a estrutura do modelo.
+        Exemplos: Taxa de aprendizado, número de camadas e neurônios em uma rede neural, número de árvores em uma floresta aleatória.
+        Função: Influenciam a performance do modelo e a eficiência do processo de treinamento. Ajustar os hiperparâmetros corretamente é crucial para otimizar o desempenho do modelo.
+        Enquanto os parâmetros são ajustados automaticamente durante o treinamento do modelo, os hiperparâmetros precisam ser definidos e otimizados manualmente ou através de técnicas como busca em grade ou otimização bayesiana.
+        
+        
+        
+        
+</p>
+
+        <h2>Busca em Grade (Grid Search)</h2>
+        <p>Busca em Grade (Grid Search) é uma técnica de otimização usada para encontrar a melhor combinação de hiperparâmetros para um modelo de aprendizado de máquina.
+
+            Funcionamento: Define uma grade de possíveis valores para cada hiperparâmetro e avalia o desempenho do modelo para cada combinação possível desses valores. O processo envolve:
+            
+            Definição da Grade: Especifica um conjunto de valores para cada hiperparâmetro que se deseja testar.
+            Treinamento e Avaliação: Treina o modelo com cada combinação de hiperparâmetros e avalia o desempenho usando uma métrica de validação.
+            Seleção da Melhor Combinação: Escolhe a combinação que produz o melhor desempenho com base na métrica de avaliação.
+            Vantagens: Simples de implementar e garante que todas as combinações especificadas sejam testadas.
+            
+            Desvantagens: Pode ser computacionalmente caro e demorado, especialmente com um grande número de hiperparâmetros e valores a serem testados.
+            
+            A busca em grade é útil para identificar a configuração de hiperparâmetros que otimiza o desempenho do modelo, mas pode ser ineficiente em termos de tempo e recursos quando o espaço de hiperparâmetros é muito grande.
+            
+            
+            
+            
+            </p>
+
+        <h2>Avaliação e Métricas de Avaliação para IA Generativa</h2>
+        <p>Avaliação e Métricas de Avaliação para IA Generativa são fundamentais para medir a qualidade e a eficácia dos modelos que geram dados, como textos, imagens ou áudio. Esses modelos incluem redes neurais generativas, GANs (Generative Adversarial Networks) e modelos de linguagem como GPT. Aqui estão algumas métricas e métodos comuns:
+
+            Qualidade do Conteúdo:
+            
+            Acurácia e Precisão: Para modelos de linguagem, avaliam se o conteúdo gerado é relevante e correto em relação a um contexto ou pergunta específica.
+            Qualidade Visual: Para imagens, pode incluir avaliações visuais ou técnicas, como medidas de nitidez e fidelidade da imagem.
+            Diversidade:
+            
+            Diversidade de Amostras: Mede a variedade das amostras geradas para garantir que o modelo não produza apenas saídas repetitivas ou semelhantes.
+            Coerência e Fluidez:
+            
+            Avaliação Humana: Especialistas ou usuários avaliam a coerência e a fluidez do conteúdo gerado. Por exemplo, em modelos de linguagem, isso pode incluir a avaliação da gramática e da coesão textual.
+            Perplexidade: Para modelos de linguagem, mede a probabilidade de uma sequência de palavras, com uma perplexidade mais baixa indicando um modelo melhor.
+            Avaliação Automática:
+            
+            Frechet Inception Distance (FID): Para imagens, avalia a qualidade das imagens geradas comparando a distribuição das características extraídas das imagens geradas e das reais.
+            Inception Score (IS): Avalia a qualidade das imagens geradas com base na capacidade de uma rede neural de identificar e classificar as imagens.
+            Essas métricas ajudam a garantir que os modelos generativos produzam saídas úteis, diversas e de alta qualidade, alinhadas com os objetivos e necessidades do usuário.
+            
+            
+            
+            
+            </p>
     </div>
     <a href="../index.html">Voltar para página inicial</a>
 </body>
